@@ -1,0 +1,38 @@
+plugins {
+    id "com.moowork.node" version "0.13"
+}
+
+group 'crazyideas'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'application'
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile 'org.seleniumhq.selenium:selenium-api:3.0.0-beta3'
+    testCompile 'org.seleniumhq.selenium:htmlunit-driver:2.23'
+    testCompile 'org.seleniumhq.selenium:selenium-chrome-driver:3.0.0-beta3'
+    testCompile 'org.seleniumhq.selenium:selenium-firefox-driver:3.0.0-beta3'
+    testCompile 'org.eclipse.jetty:jetty-maven-plugin:9.3.9.v20160517'
+}
+
+mainClassName = 'run.Launcher'
+
+run {
+    if (!project.hasProperty('port')) ext.port = 8080
+    args port
+}
+
+task stage(dependsOn: ['clean', 'installApp'])
+
+task ci(dependsOn: ['clean', 'test', 'npm_install', 'npm_test'])
+

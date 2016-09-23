@@ -1,0 +1,1 @@
+web: java -cp build/install/tdd-ready-java/lib/tdd-ready-java-1.0-SNAPSHOT.jar run.Launcher $PORT

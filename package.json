@@ -1,0 +1,21 @@
+{
+  "name": "tdd-ready-java",
+  "version": "1.0.0",
+  "devDependencies": {
+    "app-root-dir": "^1.0.2",
+    "chai": "^3.3.0",
+    "cheerio": "^0.22.0",
+    "jquery": "^3.1.0",
+    "jsdom": "^9.5.0",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
+  },
+  "engines": {
+    "node": "4.1.0",
+    "npm": "2.14.3"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha src/test --recursive"
+  }
+}

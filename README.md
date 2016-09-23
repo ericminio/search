@@ -1,0 +1,2 @@
+[![Build Status](https://travis-ci.org/ericminio/search.svg?branch=master)](https://travis-ci.org/ericminio/search)
+[![Working software](https://heroku-badge.herokuapp.com/?app=alternate-locations&svg=1)](https://alternate-locations.herokuapp.com/search)

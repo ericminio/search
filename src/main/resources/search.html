@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/main.css">
+    </head>
+<body>
+    <label id="invitation">Search for</label>
+    <input id="criteria" />
+    <button id="go" onclick="new Fetcher($).executeSearch();">Go</button>
+    <hr/>
+    <img src="/hospital.jpg" />
+    <img src="/me.png" style="position:absolute;top:200px;left:250px"/>
+    <div>
+        <span id="spot-1" class="spot hidden" style="top:180px;left:150px;"></span>
+        <span id="spot-2" class="spot hidden" style="top:180px;left:300px;"></span>
+        <span id="spot-3" class="spot hidden" style="top:260px;left:420px;"></span>
+        <span id="spot-4" class="spot hidden" style="top:340px;left:560px;"></span>
+        <span id="spot-5" class="spot hidden" style="top:80px;left:620px;"></span>
+    </div>
+
+    <script src="/jquery-1.9.0.min.js"></script>
+    <script src="/execute-search.js"></script>
+
+</body>
+</html>
