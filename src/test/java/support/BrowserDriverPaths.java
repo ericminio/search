@@ -1,5 +1,6 @@
 package support;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.File;
@@ -13,12 +14,14 @@ import static org.hamcrest.core.StringEndsWith.endsWith;
 public class BrowserDriverPaths {
 
     @Test
+    @Ignore
     public void geckoDriverPathIsKnown() {
         assertThat(BrowserDriverPaths.firefox(), endsWith("geckodriver.exe"));
         assertThat(new File(BrowserDriverPaths.firefox()).exists(), equalTo(true));
     }
 
     @Test
+    @Ignore
     public void chromeDriverPathIsKnown() {
         assertThat(BrowserDriverPaths.chrome(), endsWith("chromedriver.exe"));
         assertThat(new File(BrowserDriverPaths.chrome()).exists(), equalTo(true));
