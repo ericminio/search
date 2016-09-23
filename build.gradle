@@ -5,6 +5,7 @@ plugins {
 node {
     version = '4.1.0'
     npmVersion = '2.14.3'
+    download = true
 }
 
 group 'crazyideas'
