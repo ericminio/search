@@ -2,6 +2,11 @@ plugins {
     id "com.moowork.node" version "0.13"
 }
 
+node {
+    version = '4.1.0'
+    npmVersion = '2.14.3'
+}
+
 group 'crazyideas'
 version '1.0-SNAPSHOT'
 
